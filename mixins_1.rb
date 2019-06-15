@@ -1,7 +1,7 @@
 module Herviboro
   DEFINE = 'Sólo me alimento de vegetales!'
 
-  def self.definir
+  def definir
     DEFINE
   end
 
@@ -26,4 +26,4 @@ end
 conejo = Conejo.new('Bugs Bunny')
 puts conejo.saludar
 puts conejo.dieta
-puts Herviboro::definir
+puts conejo.definir
