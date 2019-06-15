@@ -6,6 +6,7 @@ class Vehicle
   end
   def engine_start
     @start = true
+    puts "El motor se ha encendido!"
   end
 end
 
@@ -19,18 +20,13 @@ class Car < Vehicle
     @@instances
   end
 
-  def engine_start
-    super
-    puts "El motor se ha encendido! #{@start}"
-  end
 end
 
 
 10.times do |i|
-  Car.new
+  Car.new.engine_start
 end
 
-print Car.new.engine_start
 print Car.get_number_of_instances
 
 
